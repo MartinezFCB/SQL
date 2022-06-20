@@ -1,0 +1,38 @@
+--Create grocery store database
+
+CREATE TABLE store (id INTEGER Primary Key, names TEXT, quantity INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO store VALUES (1, "car_toy", 30, 10.00, "multiple");
+INSERT INTO store VALUES(2, "gum", 300, 1.00, "multiple");
+INSERT INTO store VALUES(3, "cup", 100, 4.00, "clear");
+INSERT INTO store VALUES(4, "banana", 50, 2.00, "yellow");
+INSERT INTO store VALUES(5, "strawberries", 200, 1.00, "red");
+INSERT INTO store VALUES(6, "lime", 300, 1.00, "yellow");
+INSERT INTO store VALUES(7, "apple", 100, 1.00, "red"); 
+INSERT INTO store VALUES(8, "waters", 50, 2.00, "transparent");
+INSERT INTO store VALUES(9, "bread", 10, 3.00, "tan");
+INSERT INTO store VALUES(10, "shoes", 50, 25.00, "multiple"); 
+INSERT INTO store VALUES(11, "oranges", 60, 1.00, "orange");
+INSERT INTO store VALUES(12, "pepper", 80, 3.00, "green");
+INSERT INTO store VALUES(13, "cucumber", 70, 2.00, "green");
+INSERT INTO store VALUES(14, "peaches", 80, 1.50, "red");
+INSERT INTO store VALUES(15, "kiwis", 100, 1.00, "green");
+
+
+--Display the items database ordered by price
+SELECT * FROM store
+Order By price asc;
+
+--What is the price amount for each quantity amount?
+SELECT (quantity*price) FROM store;
+
+--What is the overall count of every item in the database?
+SELECT SUM(quantity) FROM store;
+
+
+
+
+
+
+
+
